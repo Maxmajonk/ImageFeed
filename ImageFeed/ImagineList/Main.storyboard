@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -24,20 +24,24 @@
 YP Black</string>
                                 </color>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" id="Bfj-4B-mju" customClass="ImagesListCell" customModule="ImageFeed" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="ImagesListCell" rowHeight="224" id="Bfj-4B-mju" customClass="ImagesListCell" customModule="ImageFeed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bfj-4B-mju" id="EBf-8D-beJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="BDe-lD-Fbk">
-                                                    <rect key="frame" x="16" y="60" width="343" height="370"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="BDe-lD-Fbk">
+                                                    <rect key="frame" x="16" y="4" width="382" height="216"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mU-Pb-k2I" userLabel="LikeButton">
-                                                    <rect key="frame" x="330" y="-58" width="68" height="58"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mU-Pb-k2I" userLabel="LikeButton">
+                                                    <rect key="frame" x="332" y="4" width="66" height="56"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="Button" image="Active">
                                                         <attributedString key="attributedTitle">
@@ -51,15 +55,30 @@ YP Black</string>
                                                     </state>
                                                     <buttonConfiguration key="configuration" style="plain" image="Active"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 Июля 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-90-waP" userLabel="Date Button">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15 Июля 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-90-waP" userLabel="DateLable">
                                                     <rect key="frame" x="24" y="196" width="101.5" height="16"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" name="YP White"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor">
+                                                <string key="name">
+YP Black</string>
+                                            </color>
+                                            <constraints>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="bottom" secondItem="XV7-90-waP" secondAttribute="bottom" constant="8" id="EYA-aG-s1c"/>
+                                                <constraint firstAttribute="trailing" secondItem="BDe-lD-Fbk" secondAttribute="trailing" constant="16" id="UhM-9n-wb3"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XV7-90-waP" secondAttribute="trailing" constant="8" id="VUh-2Q-0mx"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="top" secondItem="EBf-8D-beJ" secondAttribute="top" constant="4" id="WzW-nB-fAn"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="leading" secondItem="EBf-8D-beJ" secondAttribute="leading" constant="16" id="ept-Uw-7Hj"/>
+                                                <constraint firstItem="XV7-90-waP" firstAttribute="leading" secondItem="BDe-lD-Fbk" secondAttribute="leading" constant="8" id="lmV-dO-18h"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="trailing" secondItem="6mU-Pb-k2I" secondAttribute="trailing" id="rSj-SG-MSX"/>
+                                                <constraint firstAttribute="bottom" secondItem="BDe-lD-Fbk" secondAttribute="bottom" constant="4" id="tfk-7T-Zvo"/>
+                                                <constraint firstItem="6mU-Pb-k2I" firstAttribute="top" secondItem="BDe-lD-Fbk" secondAttribute="top" id="y6k-Lm-zct"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="YP White"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
