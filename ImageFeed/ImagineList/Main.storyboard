@@ -40,23 +40,17 @@ YP Black</string>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mU-Pb-k2I" userLabel="LikeButton">
-                                                    <rect key="frame" x="332" y="4" width="66" height="56"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVc-Qa-gUf" userLabel="Like Button">
+                                                    <rect key="frame" x="354" y="4" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="Oi5-0Y-TPo"/>
+                                                        <constraint firstAttribute="height" constant="44" id="vjo-HN-p91"/>
+                                                    </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="Button" image="Active">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="Button">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="12" name="Helvetica"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                    <buttonConfiguration key="configuration" style="plain" image="Active"/>
+                                                    <state key="normal" image="ActiveLike"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15 Июля 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-90-waP" userLabel="DateLable">
-                                                    <rect key="frame" x="24" y="196" width="101.5" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Июля 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-90-waP" userLabel="Date Lable">
+                                                    <rect key="frame" x="24" y="196" width="87" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" name="YP White"/>
                                                     <nil key="highlightedColor"/>
@@ -67,18 +61,23 @@ YP Black</string>
 YP Black</string>
                                             </color>
                                             <constraints>
-                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="bottom" secondItem="XV7-90-waP" secondAttribute="bottom" constant="8" id="EYA-aG-s1c"/>
-                                                <constraint firstAttribute="trailing" secondItem="BDe-lD-Fbk" secondAttribute="trailing" constant="16" id="UhM-9n-wb3"/>
-                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XV7-90-waP" secondAttribute="trailing" constant="8" id="VUh-2Q-0mx"/>
-                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="top" secondItem="EBf-8D-beJ" secondAttribute="top" constant="4" id="WzW-nB-fAn"/>
-                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="leading" secondItem="EBf-8D-beJ" secondAttribute="leading" constant="16" id="ept-Uw-7Hj"/>
-                                                <constraint firstItem="XV7-90-waP" firstAttribute="leading" secondItem="BDe-lD-Fbk" secondAttribute="leading" constant="8" id="lmV-dO-18h"/>
-                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="trailing" secondItem="6mU-Pb-k2I" secondAttribute="trailing" id="rSj-SG-MSX"/>
-                                                <constraint firstAttribute="bottom" secondItem="BDe-lD-Fbk" secondAttribute="bottom" constant="4" id="tfk-7T-Zvo"/>
-                                                <constraint firstItem="6mU-Pb-k2I" firstAttribute="top" secondItem="BDe-lD-Fbk" secondAttribute="top" id="y6k-Lm-zct"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="bottom" secondItem="XV7-90-waP" secondAttribute="bottom" constant="8" id="2hR-j5-7QB"/>
+                                                <constraint firstAttribute="trailing" secondItem="BDe-lD-Fbk" secondAttribute="trailing" constant="16" id="4tg-kd-IL1"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XV7-90-waP" secondAttribute="trailing" constant="8" id="8ac-a4-f0C"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="leading" secondItem="EBf-8D-beJ" secondAttribute="leading" constant="16" id="YNs-va-nqp"/>
+                                                <constraint firstAttribute="bottom" secondItem="BDe-lD-Fbk" secondAttribute="bottom" constant="4" id="Z3p-PG-mI5"/>
+                                                <constraint firstItem="BVc-Qa-gUf" firstAttribute="trailing" secondItem="BDe-lD-Fbk" secondAttribute="trailing" id="lOa-3c-vpm"/>
+                                                <constraint firstItem="BVc-Qa-gUf" firstAttribute="top" secondItem="BDe-lD-Fbk" secondAttribute="top" id="nC4-zP-VYk"/>
+                                                <constraint firstItem="XV7-90-waP" firstAttribute="leading" secondItem="BDe-lD-Fbk" secondAttribute="leading" constant="8" id="pwK-ih-e47"/>
+                                                <constraint firstItem="BDe-lD-Fbk" firstAttribute="top" secondItem="EBf-8D-beJ" secondAttribute="top" constant="4" id="z7X-z4-qLY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="YP White"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="BDe-lD-Fbk" id="5f4-Qh-Bvv"/>
+                                            <outlet property="dateLable" destination="XV7-90-waP" id="8WS-KH-vaN"/>
+                                            <outlet property="likeButton" destination="BVc-Qa-gUf" id="FIN-lc-iEN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -110,7 +109,7 @@ YP Black</string>
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
-        <image name="Active" width="44" height="44"/>
+        <image name="ActiveLike" width="44" height="44"/>
         <namedColor>
             <string key="name">
 YP Black</string>
