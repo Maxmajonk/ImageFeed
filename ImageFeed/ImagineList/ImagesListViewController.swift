@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ImagesListViewController: UIViewController {
+final class ImagesListViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
     let likeButton = UIButton()
@@ -15,16 +15,35 @@ class ImagesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // tableView.delegate = self
         tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    /* У меня возник вопрос, как лучше сделать статусбар: динамичным или просто что бы всегда оставался белым?
+     на всякий случай поставлю один цвет, но буду благодарен за ответ, спасибо:)
+     var isDarkContentBackground = false
+     
+     func updateStatusBarStyle() {
+     setNeedsStatusBarAppearanceUpdate()
+     }
+     
+     override var preferredStatusBarStyle: UIStatusBarStyle {
+     if isDarkContentBackground {
+     return .lightContent
+     } else {
+     return .darkContent
+     }
+     }
+     */
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         formatter.timeStyle = .none
         return formatter
     }()
-    
 }
 
 extension ImagesListViewController: UITableViewDataSource {
@@ -54,7 +73,8 @@ extension ImagesListViewController {
         cell.cellImage.image = image
         cell.dateLable.text = dateFormatter.string(from: Date())
         
-        let isLiked = indexPath.row % 2 == 0
+        let isLiked = indexPath.row % 2 == 1
+
         let likeImage = isLiked ? UIImage(named: "ActiveLike") : UIImage(named: "NotActiveLike")
         cell.likeButton.setImage(likeImage, for: .normal)
     }
@@ -75,3 +95,16 @@ extension ImagesListViewController: UITableViewDelegate {
         return cellHeight
     }
 }
+
+/*extension ImagesListViewController: UIScrollViewDelegate {
+ func scrollViewDidScroll(_ scrollView: UIScrollView) {
+ let contentOffsetY = scrollView.contentOffset.y
+ let isScrolledOnDarkBackground = contentOffsetY < 0 || scrollView.backgroundColor == .black
+ 
+ if isDarkContentBackground != isScrolledOnDarkBackground {
+ isDarkContentBackground = isScrolledOnDarkBackground
+ updateStatusBarStyle()
+ }
+ }
+ }
+ */
