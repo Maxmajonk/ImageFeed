@@ -8,11 +8,9 @@
 import UIKit
 
 final class ImagesListCell: UITableViewCell {
-
     
-    @IBOutlet var likeButton: UIButton!
+    @IBOutlet var likeButton: UIButton! // удалить эту кнопку?
     @IBOutlet var cellImage: UIImageView!
     @IBOutlet var dateLable: UILabel!
     static let reuseIdentifier = "ImagesListCell"
-    
-}
+    }
