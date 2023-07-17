@@ -13,4 +13,4 @@ final class ImagesListCell: UITableViewCell {
     @IBOutlet var cellImage: UIImageView!
     @IBOutlet var dateLable: UILabel!
     static let reuseIdentifier = "ImagesListCell"
-    }
+}
