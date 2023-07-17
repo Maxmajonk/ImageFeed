@@ -22,7 +22,6 @@ final class ImagesListViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
     /* У меня возник вопрос, как лучше сделать статусбар: динамичным или просто что бы всегда оставался белым?
      на всякий случай поставлю один цвет, но буду благодарен за ответ, спасибо:)
      var isDarkContentBackground = false
@@ -75,6 +74,7 @@ extension ImagesListViewController {
         cell.dateLable.text = dateFormatter.string(from: Date())
         
         let isLiked = indexPath.row % 2 == 1
+
         let likeImage = isLiked ? UIImage(named: "ActiveLike") : UIImage(named: "NotActiveLike")
         cell.likeButton.setImage(likeImage, for: .normal)
     }
