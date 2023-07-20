@@ -10,7 +10,6 @@ import UIKit
 final class ImagesListViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
-    let likeButton = UIButton()
     private let photosName: [String] = Array(0..<20).map{ "\($0)" }
     
     override func viewDidLoad() {
@@ -23,22 +22,6 @@ final class ImagesListViewController: UIViewController {
         return .lightContent
     }
     
-    /* У меня возник вопрос, как лучше сделать статусбар: динамичным или просто что бы всегда оставался белым?
-     на всякий случай поставлю один цвет, но буду благодарен за ответ, спасибо:)
-     var isDarkContentBackground = false
-     
-     func updateStatusBarStyle() {
-     setNeedsStatusBarAppearanceUpdate()
-     }
-     
-     override var preferredStatusBarStyle: UIStatusBarStyle {
-     if isDarkContentBackground {
-     return .lightContent
-     } else {
-     return .darkContent
-     }
-     }
-     */
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -95,16 +78,3 @@ extension ImagesListViewController: UITableViewDelegate {
         return cellHeight
     }
 }
-
-/*extension ImagesListViewController: UIScrollViewDelegate {
- func scrollViewDidScroll(_ scrollView: UIScrollView) {
- let contentOffsetY = scrollView.contentOffset.y
- let isScrolledOnDarkBackground = contentOffsetY < 0 || scrollView.backgroundColor == .black
- 
- if isDarkContentBackground != isScrolledOnDarkBackground {
- isDarkContentBackground = isScrolledOnDarkBackground
- updateStatusBarStyle()
- }
- }
- }
- */
