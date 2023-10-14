@@ -14,6 +14,7 @@
 		EB93A4862A4796100096E711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB93A4852A4796100096E711 /* Assets.xcassets */; };
 		EB93A4892A4796100096E711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB93A4872A4796100096E711 /* LaunchScreen.storyboard */; };
 		EBBD64442A59FB6E00F3D7FF /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD64432A59FB6E00F3D7FF /* ImagesListCell.swift */; };
+		EBD203902AD5E006003F0C6E /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2038F2AD5E006003F0C6E /* SingleImageViewController.swift */; };
 		EBDB2C392A5DE9C40007A4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDB2C382A5DE9C30007A4EF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		EB93A4882A4796100096E711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB93A48A2A4796100096E711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBD64432A59FB6E00F3D7FF /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		EBD2038F2AD5E006003F0C6E /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		EBDB2C382A5DE9C30007A4EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ImagineList/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 			children = (
 				EB93A47C2A47960C0096E711 /* AppDelegate.swift */,
 				EB93A47E2A47960C0096E711 /* SceneDelegate.swift */,
+				EBD203912AD5E2BD003F0C6E /* SingleImageView */,
 				EB320A142A69242A004BD97B /* Profile */,
 				EBBD64452A5B4D3200F3D7FF /* ImagineList */,
 				EB93A4852A4796100096E711 /* Assets.xcassets */,
@@ -87,6 +90,14 @@
 				EB93A4802A47960C0096E711 /* ImagesListViewController.swift */,
 			);
 			path = ImagineList;
+			sourceTree = "<group>";
+		};
+		EBD203912AD5E2BD003F0C6E /* SingleImageView */ = {
+			isa = PBXGroup;
+			children = (
+				EBD2038F2AD5E006003F0C6E /* SingleImageViewController.swift */,
+			);
+			path = SingleImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				EBBD64442A59FB6E00F3D7FF /* ImagesListCell.swift in Sources */,
 				EB320A132A692424004BD97B /* ProfileViewController.swift in Sources */,
 				EB93A47D2A47960C0096E711 /* AppDelegate.swift in Sources */,
+				EBD203902AD5E006003F0C6E /* SingleImageViewController.swift in Sources */,
 				EB93A47F2A47960C0096E711 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
