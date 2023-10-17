@@ -28,7 +28,6 @@ final class SingleImageViewController : UIViewController {
             applicationActivities: nil
         )
     }
-
     @IBOutlet private var imageView: UIImageView!
     
     // MARK: - didload
