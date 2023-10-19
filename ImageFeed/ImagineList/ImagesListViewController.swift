@@ -41,6 +41,7 @@ final class ImagesListViewController: UIViewController {
         formatter.timeStyle = .none
         return formatter
     }()
+    
 }
 
 extension ImagesListViewController: UITableViewDataSource {
@@ -70,7 +71,7 @@ extension ImagesListViewController {
         cell.cellImage.image = image
         cell.dateLable.text = dateFormatter.string(from: Date())
         
-        let isLiked = indexPath.row % 2 == 1
+        let isLiked = indexPath.row % 2 == 0
         let likeImage = isLiked ? UIImage(named: "ActiveLike") : UIImage(named: "NotActiveLike")
         cell.likeButton.setImage(likeImage, for: .normal)
     }
