@@ -19,14 +19,15 @@ final class SingleImageViewController : UIViewController {
   // MARK: - buttons
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBAction func BackButton() {
+    @IBAction func backButton() {
         dismiss(animated: true, completion: nil)
     }
-    @IBAction func ShareBotton(_ sender: UIButton) {
+    @IBAction func shareBotton(_ sender: UIButton) {
         let share = UIActivityViewController(
             activityItems: [image],
             applicationActivities: nil
         )
+        present (share,animated: true)
     }
     @IBOutlet private var imageView: UIImageView!
     

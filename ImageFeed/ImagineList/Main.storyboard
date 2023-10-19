@@ -85,10 +85,7 @@ YP Black</string>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor">
-                            <string key="name">
-YP Black</string>
-                        </color>
+                        <color key="backgroundColor" name="YP Background"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="LPj-dq-Xob" secondAttribute="bottom" id="D89-qU-9dN"/>
                             <constraint firstAttribute="trailing" secondItem="LPj-dq-Xob" secondAttribute="trailing" id="G1v-pu-qCK"/>
@@ -130,6 +127,9 @@ YP Black</string>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="rc9-3K-fGX"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qXY-dj-SHl"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QU1-my-JOP" id="twC-9S-8vz"/>
+                                </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnf-fJ-RaJ" userLabel="BackButton">
                                 <rect key="frame" x="8" y="56" width="24" height="24"/>
@@ -142,7 +142,7 @@ YP Black</string>
                                     <color key="titleColor" name="YP White"/>
                                 </state>
                                 <connections>
-                                    <action selector="BackButton" destination="QU1-my-JOP" eventType="touchUpInside" id="zey-D7-QW0"/>
+                                    <action selector="backButton" destination="QU1-my-JOP" eventType="touchUpInside" id="g3K-98-lt3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-p7-JmU" userLabel="ShareButton">
@@ -154,7 +154,7 @@ YP Black</string>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="SharingButton"/>
                                 <connections>
-                                    <action selector="ShareBotton:" destination="QU1-my-JOP" eventType="touchUpInside" id="opu-KQ-Q6x"/>
+                                    <action selector="shareBotton:" destination="QU1-my-JOP" eventType="touchUpInside" id="xKM-tg-SyO"/>
                                 </connections>
                             </button>
                         </subviews>
