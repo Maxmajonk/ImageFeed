@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB320A132A692424004BD97B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB320A122A692424004BD97B /* ProfileViewController.swift */; };
+		EB7473672AE3156B00B62C35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7473662AE3156B00B62C35 /* Constants.swift */; };
+		EB7473692AE32EC100B62C35 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7473682AE32EC100B62C35 /* AuthViewController.swift */; };
+		EB74736E2AE3309500B62C35 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB74736D2AE3309400B62C35 /* WebViewViewController.swift */; };
 		EB93A47D2A47960C0096E711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A47C2A47960C0096E711 /* AppDelegate.swift */; };
 		EB93A47F2A47960C0096E711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A47E2A47960C0096E711 /* SceneDelegate.swift */; };
 		EB93A4812A47960C0096E711 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93A4802A47960C0096E711 /* ImagesListViewController.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		EB320A122A692424004BD97B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EB7473662AE3156B00B62C35 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EB7473682AE32EC100B62C35 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		EB74736D2AE3309400B62C35 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		EB93A4792A47960C0096E711 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB93A47C2A47960C0096E711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB93A47E2A47960C0096E711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		EB74736C2AE32F8100B62C35 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EB7473682AE32EC100B62C35 /* AuthViewController.swift */,
+				EB74736D2AE3309400B62C35 /* WebViewViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		EB93A4702A47960C0096E711 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +87,10 @@
 		EB93A47B2A47960C0096E711 /* ImageFeed */ = {
 			isa = PBXGroup;
 			children = (
-				EB93A47C2A47960C0096E711 /* AppDelegate.swift */,
+				EB7473662AE3156B00B62C35 /* Constants.swift */,
 				EB93A47E2A47960C0096E711 /* SceneDelegate.swift */,
+				EB93A47C2A47960C0096E711 /* AppDelegate.swift */,
+				EB74736C2AE32F8100B62C35 /* Auth */,
 				EBD203912AD5E2BD003F0C6E /* SingleImageView */,
 				EB320A142A69242A004BD97B /* Profile */,
 				EBBD64452A5B4D3200F3D7FF /* ImagineList */,
@@ -182,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB74736E2AE3309500B62C35 /* WebViewViewController.swift in Sources */,
 				EB93A4812A47960C0096E711 /* ImagesListViewController.swift in Sources */,
 				EBBD64442A59FB6E00F3D7FF /* ImagesListCell.swift in Sources */,
 				EB320A132A692424004BD97B /* ProfileViewController.swift in Sources */,
@@ -189,6 +207,8 @@
 				EB93A47D2A47960C0096E711 /* AppDelegate.swift in Sources */,
 				EBD203902AD5E006003F0C6E /* SingleImageViewController.swift in Sources */,
 				EB93A47F2A47960C0096E711 /* SceneDelegate.swift in Sources */,
+				EB7473692AE32EC100B62C35 /* AuthViewController.swift in Sources */,
+				EB7473672AE3156B00B62C35 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
